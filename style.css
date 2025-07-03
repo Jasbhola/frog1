@@ -1,35 +1,27 @@
 body {
-  margin: 0;
-  padding: 0;
+  background-color: #000; /* black */
+  color: white;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0f0f0f;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  text-align: center;
+  margin-top: 10%;
 }
 
 .container {
-  text-align: center;
-}
-
-h1 {
-  color: #cfcfcf;
+  padding: 20px;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #4b7bec;
+  background-color: #3399ff; /* ghostly blue */
   color: white;
   border: none;
+  padding: 10px 20px;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #3867d6;
+  background-color: #1a75d1;
 }
