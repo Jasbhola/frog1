@@ -1,10 +1,10 @@
 const quotes = [
-  "You are doing better than you think.",
-  "Don’t be afraid to dream bigger.",
-  "One small step a day is still progress.",
-  "You’ve survived 100% of your worst days.",
-  "Your energy is your power. Protect it.",
-  "Be proud of how far you’ve come."
+  "You're doing better than you think. ✨",
+  "Just show up. That's half the win. 💪",
+  "Your story is just beginning. Keep going. 🌙",
+  "Progress is still progress, no matter how small.",
+  "You’re not lazy—you’re just recharging. 🔋",
+  "Believe in your ghostly power. 👻"
 ];
 
 function generateAdvice() {
