@@ -4,13 +4,32 @@
   <meta charset="UTF-8">
   <title>Task 3 - Outfit Check</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .progress-bar {
+      width: 100%;
+      background-color: #444;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .progress {
+      height: 14px;
+      background-color: #3399ff;
+      width: 30%; /* 3 out of 10 tasks = 30% */
+    }
+  </style>
 </head>
 <body>
   <div class="container">
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
     <h1>Task 3: Outfit Check 👗</h1>
     <p>Put on something comfy or hot. Even your slippers can slay.</p>
     <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="outfit gif">
-    <a class="task-button" href="index.html">Back to Home 🏠</a>
+    <a class="task-button" data-task="3" href="task4.html">Mark Complete ✅</a>
   </div>
 </body>
 </html>
