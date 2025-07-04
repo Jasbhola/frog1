@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My AI Assistant</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Baddie AI Assistant</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
-    <h1>Hello, I’m your AI assistant! 🖤✨</h1>
-    <p id="daily-text">Let’s build something amazing together.</p>
-    <button onclick="generateAdvice()">Start your day</button>
+    <h1 id="title">👑 Baddie Daily Assistant</h1>
+    <img id="gif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjdiMG92ZHR0bWx1dmM5djB5OGU4M2h3OG00ODFhdDdhZ3B3b3R0bCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif" alt="AI gif" />
+    <p id="task-text">Ready to slay your day? Hit start babe.</p>
+    <button id="start-btn" onclick="startRoutine()">Start Your Day</button>
+    <div id="task-area" style="display:none;">
+      <p id="progress-text"></p>
+      <button id="next-btn" onclick="nextTask()">I'm done 💅</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
