@@ -8,23 +8,32 @@
   <style>
     .progress-bar {
       width: 100%;
-      background-color: #444;
+      background-color: #1a1a1a;
+      border: 1px solid #555;
       border-radius: 10px;
       overflow: hidden;
-      margin-bottom: 20px;
+      margin: 20px 0;
+      height: 18px;
     }
     .progress {
-      height: 14px;
+      height: 100%;
       background-color: #3399ff;
-      width: 10%; /* Task 1 = 10% */
+      transition: width 0.4s ease;
+      width: 10%;
+    }
+    .progress-text {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 5px;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="progress-bar">
-      <div class="progress"></div>
-    </div>
+    <div class="progress-bar"><div class="progress"></div></div>
+    <div class="progress-text">You’re 10% through your slay 😈</div>
+
     <h1>Task 1: Drink Water 💧</h1>
     <p>Drink a full glass of water. Your body will thank you 💦</p>
     <img src="https://media.giphy.com/media/JQq9g1ZQ1cE5G/giphy.gif" alt="drink water gif">
