@@ -2,17 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Task 4 - Journal</title>
+  <title>Task 4 - Gratitude Glow-Up</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: 'Helvetica Neue', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .progress-bar {
+      width: 100%;
+      background-color: #222;
+      border: 1px solid #555;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px 0;
+      height: 18px;
+    }
+    .progress {
+      height: 100%;
+      background-color: #3399ff;
+      transition: width 0.4s ease;
+      width: 40%;
+    }
+    .progress-text {
+      text-align: center;
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+    .gratitude-input {
+      background: #222;
+      border: 1px solid #555;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 15px;
+      color: white;
+      width: 100%;
+      font-size: 14px;
+    }
+    .submit-btn {
+      background-color: #3399ff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .sparkle {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background: radial-gradient(circle, #fff, transparent);
+      pointer-events: none;
+      animation: sparkle 1s ease-out forwards;
+    }
+    @keyframes sparkle {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(3); opacity: 0; }
+    }
+    .task-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #3399ff;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    img {
+      width: 280px;
+      border-radius: 10px;
+      margin: 25px 0;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Task 4: Journal 💌</h1>
-    <p>Write 3 things you're grateful for in the box below 💌</p>
-    <textarea rows="4" cols="40" placeholder="Type here..."></textarea>
-    <img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" alt="journal gif">
-    <a class="task-button" data-task="4" href="task5.html">Mark Complete ✅</a>
+    <div class="progress-bar"><div class="progress"></div></div>
+    <div class="progress-text">You're 40% through your day 🦋</div>
+
+    <h1>Task 4: Write 3 Things You're Grateful For</h1>
+    <img src="https://media.giphy.com/media/3o7TKH4jzZ2dDdMfXq/giphy.gif" alt="gratitude gif">
+    
+    <input class="gratitude-input" type="text" placeholder="✨ I’m grateful for...">
+    <input class="gratitude-input" type="text" placeholder="✨ I’m thankful that...">
+    <input class="gratitude-input" type="text" placeholder="✨ Today I feel lucky because...">
+    
+    <button class="submit-btn" onclick="completeTask()">Save & Sparkle ✨</button>
+
+    <a class="task-button" href="task5.html">Next Task ➜</a>
   </div>
+
+  <script>
+    function completeTask() {
+      for (let i = 0; i < 20; i++) {
+        const sparkle = document.createElement("div");
+        sparkle.className = "sparkle";
+        sparkle.style.top = `${Math.random() * window.innerHeight}px`;
+        sparkle.style.left = `${Math.random() * window.innerWidth}px`;
+        document.body.appendChild(sparkle);
+        setTimeout(() => sparkle.remove(), 1000);
+      }
+      alert("Saved! You're doing amazing. 💖");
+    }
+  </script>
 </body>
 </html>
