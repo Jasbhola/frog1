@@ -2,15 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Task 1 - Hydration Check</title>
+  <title>Task 1 - Hydrate</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .progress-bar {
+      width: 100%;
+      background-color: #444;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .progress {
+      height: 14px;
+      background-color: #3399ff;
+      width: 10%; /* Task 1 = 10% */
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Task 1: Hydration Check 💧</h1>
-    <p>Get up and drink a full glass of water. Hydrate that hot body, baddie.</p>
-    <img src="https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif" alt="drink water gif">
-    <a class="task-button" href="task2.html">Mark Complete ✅</a>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <h1>Task 1: Drink Water 💧</h1>
+    <p>Drink a full glass of water. Your body will thank you 💦</p>
+    <img src="https://media.giphy.com/media/JQq9g1ZQ1cE5G/giphy.gif" alt="drink water gif">
+    <a class="task-button" data-task="1" href="task2.html">Mark Complete ✅</a>
   </div>
 </body>
 </html>
