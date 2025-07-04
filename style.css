@@ -13,16 +13,6 @@ body {
   padding: 20px;
 }
 
-h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
 .task-button {
   display: inline-block;
   padding: 10px 20px;
@@ -65,10 +55,5 @@ img {
   text-align: center;
   font-size: 14px;
   color: #ccc;
-  margin-top: 5px;
-}
-
-.disabled {
-  pointer-events: none;
-  opacity: 0.4;
+  margin-bottom: 20px;
 }
